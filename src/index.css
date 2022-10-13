@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  padding: 0;
+  font-size: 14px;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  background-color: #0052cc;
+  box-sizing: border-box;
+}
+.task_heading{
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+}
+.search_input{
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.search_input:focus, .search_input:active, .search_input:hover{
+  outline: none;
+  border: 1px solid #aaaaaa;
+}
+.body_wrapper{
+  padding: 40px;
+}
+.modals{
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-contents {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  border-radius: 4px;
+}
+.modal-header{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.modal-heading{
+  margin: 0;
+}
+.close_img{
+  width: 80px;
+  height:20px;
+  width:20px;
+  filter: opacity(40%);
+  cursor: pointer;
+}
+.modal-body{
+  text-align: left;
+}
+.input-label{
+  width: 100%;
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+.width-100{
+  width: 100%;
+}
+.modal-footer{
+  text-align: right;
+  margin-top: 16px;
+}
+.primary_button{
+  background:#0052cc;
+  border: 1px solid #0052cc;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.primary_button:disabled{
+  background-color: #cccccc;
+  border: 1px solid #cccccc;
+  cursor: not-allowed;
+}
+.add_task_button:hover, .add_task_button:focus, .add_task_button:active{
+  background-color: #2E77E5;
+  border: 1px solid #2E77E5;
+}
+.secondary_button{
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.secondary_button:hover, .secondary_button:focus, .secondary_button:active{
+  border: 1px solid #dddddd;
+  background-color: #dddddd;
+}
+.left-space{
+  margin-left: 16px;
+}
+.align-right{
+  text-align: right;
+}
+.align-left{
+  text-align: left;
+}
+.flex_wrapper{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 16px 0px;
+}
+.droppableStyles{
+  width: 32%;
+  background-color: #ededed;
+  border-radius: 4px;
+  padding: 16px 8px;
+  box-sizing: border-box;
+}
+.columnHeader{
+  text-transform: capitalize;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.droppableItemStyles{
+  padding:10px;
+}
+.dragItem{
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background: white;
+  margin: 0 0 16px 0;
+}
+.card_header{
+  text-align: left;
+}
+.img_tag{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card_footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.avatar-img{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.icon_tag{
+  height:20px;
+  width:20px;
+  filter: opacity(40%);
+}
+.tooltips{
+  display: inline-block;
+  position: relative;
+}
+.tooltips .tooltiptext {
+  visibility: hidden;
+  min-width: 240px;
+  background-color: #cccccc;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  right: 0px;
+  top: -32px;
+}
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+}
+
